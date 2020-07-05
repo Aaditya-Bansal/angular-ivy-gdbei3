@@ -1,31 +1,55 @@
 .container{
 display: flex;  
-background-color: yellow;
 justify-content: center;
 align-items: center;
 height: 100vh;
 width: 100vw;
-background-image: url('https://stackblitz.com/files/angular9876789/github/Aaditya-Bansal/angular-ivy-gdbei3/master/src/app/retrosupply-jLwVAUtLOAQ-unsplash.jpg');  background-position: center;
+
+ position: relative;
+}
+.blur-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://stackblitz.com/files/angular9876789/github/Aaditya-Bansal/angular-ivy-gdbei3/master/src/app/retrosupply-jLwVAUtLOAQ-unsplash.jpg');  background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
 }
 
 
 * { box-sizing: border-box; }
 
 body {
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  color:white;
+	font-family: Arial,"Lucida Grande",sans-serif;
+  
   font-size:12px;
-  background:#333 url(/images/classy_fabric.png);
+  
 }
+.btn-login{
+  background: rgb(180, 195, 68);
+  border: 1px solid green;
+  border-radius: 5px;
+  color: black;
+  width:100%;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+    //box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  
 
+}
 .login-container {
- 	background:#111; 
-  width:300px;
-  margin:30px auto;
+  z-index: 2;
+ 	background-color:rgba(0, 0, 0, 0.404); 
+width:300px;
+  
   border-radius:0.4em;
-  border:1px solid #191919;
+  //border:1px solid #191919;
   overflow:hidden;
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
@@ -34,31 +58,19 @@ body {
 }
 
 
-form h1 {
-  font-size:18px;
-  text-shadow:0 1px 0 black;
+ h1 {
+  font-size:20px;
+color: rgb(255, 255, 255);
+ 
   text-align:center;
   padding:15px 0;
-  border-bottom:1px solid rgba(0,0,0,1);
   position:relative;
 }
 
-form h1:after {
- 	content:"";
-  display:block;
-  width:250px;
-  height:100px;
-  position:absolute;
-  top:0;
-  left:50px;
-  pointer-events:none;
-  transform:rotate(70deg);
-  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
-  
-}
+ 
 
 label {
- 	color:#666;
+ 	color:white;
   display:block;
   padding-bottom:9px;
 }
@@ -73,6 +85,7 @@ input[type=password] {
     0 1px 0 rgba(255,255,255,0.1);
   border-radius:0.3em;
   margin-bottom:20px;
+  color: white;
 }
 
 label[for=remember]{
@@ -89,6 +102,13 @@ input[type=checkbox] {
 
 .p-container {
  	padding:0 20px 20px 20px; 
+}
+.loginbtn-container{
+ 
+display: flex;  
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .p-container:after {
@@ -110,4 +130,8 @@ input[type=password]:hover,
 label:hover ~ input[type=text],
 label:hover ~ input[type=password] {
  	background:#27292c;
+}
+
+.forgot-password{
+  margin-top: 10px;
 }
