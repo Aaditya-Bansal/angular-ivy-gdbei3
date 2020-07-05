@@ -5,6 +5,9 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 width: 100vw;
+background-image: url('https://stackblitz.com/files/angular9876789/github/Aaditya-Bansal/angular-ivy-gdbei3/master/src/app/retrosupply-jLwVAUtLOAQ-unsplash.jpg');  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 
