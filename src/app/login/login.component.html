@@ -1,28 +1,16 @@
-<div class="container">
+<form class="container" (ngSubmit)="onSubmit()" #loginForm1 = "ngForm">
   <div class="blur-background"></div>
   <div class="login-container">
   <h1>The Keystrokes</h1>
-  <div class="inset">
-  <p>
-    
-    <input type="text" name="email" id="email" placeholder="Email">
+  <p>  
+    <input type="text" name="email" ngModel id="email" placeholder="Email" autocomplete="off">
   </p>
-  <p>
-    
-    <input type="password" name="password" id="password" placeholder="Password">
+  <p>   
+    <input type="password" name="password" ngModel id="password" placeholder="Password" >
   </p>
-  
-  </div>
-  
   <div class="loginbtn-container">
-    <input class="btn-login" type="submit" name="login" id="login" value="Login">
+    <input class="btn-login"  type="submit" name="login" id="login" value="Login">
     <span class="forgot-password"><u>Forgot password ?</u></span>
-  <div>
-  
-    
-  
-  
-
-  
-</div>
-</div>
+  </div>
+  </div>
+</form>

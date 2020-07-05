@@ -16,7 +16,7 @@ width: 100vw;
   background-image: url('https://stackblitz.com/files/angular9876789/github/Aaditya-Bansal/angular-ivy-gdbei3/master/src/app/retrosupply-jLwVAUtLOAQ-unsplash.jpg');  background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-  filter: blur(2px);
+  //filter: blur(1px);
   z-index: -1;
 }
 
@@ -104,7 +104,7 @@ input[type=checkbox] {
  	padding:0 20px 20px 20px; 
 }
 .loginbtn-container{
- 
+padding:0 40px 20px 40px; 
 display: flex;  
 justify-content: center;
 align-items: center;
@@ -132,6 +132,9 @@ label:hover ~ input[type=password] {
  	background:#27292c;
 }
 
+input:focus{
+    outline: none;
+}
 .forgot-password{
   margin-top: 10px;
 }
